@@ -149,12 +149,10 @@ public class Basics {
          *                you may use them if you wish.
          */
         StringBuilder ret = new StringBuilder();
-
-        String splitted = to_split.split();
-
-
-
-        // Fill in the rest of the body here
+        String[] splitted = to_split.split(" ");
+        for (int i = 0; i < splitted.length; i++){
+            ret.append(splitted[i].charAt(0));
+        }
 
         return ret.toString();
     }
@@ -182,7 +180,16 @@ public class Basics {
          *                You can index into arrays as we do in Python
          *                (e.g. arr[i] gives you the item at index i).
          */
+        if (arr.length == 0){
+            return 0;
+        }
+        for (int i = 0; i < arr.length; i++){
+            if (i % 2 == 0 ){
+                continue;
+            }
+            current_sum = current_sum + arr[i];
 
+        }
         return current_sum;
     }
 
