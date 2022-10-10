@@ -43,7 +43,7 @@ public class Basics {
         /* TODO (Task 1): Write a line of code below that prints the string
          *                Hello World!
          */
-        System.out.print("Hello World!");
+        System.out.println("Hello World!");
 
 
 
@@ -103,7 +103,7 @@ public class Basics {
          */
         for (int i = 0; i <= 10; i++){
 
-            System.out.print("Current count:" + i);
+            System.out.println("Current count:" + i);
 
         }
 
